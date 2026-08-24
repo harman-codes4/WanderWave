@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWave | Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="ls" class="loading-screen">
+  <div class="ls-logo">Wander<span>Wave</span></div>
+  <div class="ls-bar-track"><div class="ls-bar"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Wander<span>Wave</span></div>
+  <span id="greeting" class="nav-greeting"></span>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero">
+  <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="Reviews">
+  <div class="page-hero-content">
+    <h1>Traveller <span>Experiences</span></h1>
+    <p>Real stories from real explorers who chose WanderWave</p>
+  </div>
+</div>
+
+<!-- Reviews Grid -->
+<div class="review-grid" id="reviewGrid">
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <p>"Perfectly planned trip. Everything was smooth from flights to hotels. Truly a stress-free experience."</p>
+    <h4>— Ananya, India</h4>
+  </div>
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <p>"Very professional team and incredibly affordable packages. Got more than I expected for the price."</p>
+    <h4>— John, UK</h4>
+  </div>
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <p>"Highly recommended for family tours. My kids had the time of their lives in Bali!"</p>
+    <h4>— Rohan, India</h4>
+  </div>
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <p>"Best travel experience I have ever had. The itinerary was perfect and guides were excellent."</p>
+    <h4>— Meera, Delhi</h4>
+  </div>
+  <div class="review-card">
+    <div class="stars">★★★★☆</div>
+    <p>"Hotels and transport were excellent. Minor delay on one flight, but support team handled it beautifully."</p>
+    <h4>— Daniel, USA</h4>
+  </div>
+  <div class="review-card">
+    <div class="stars">★★★★★</div>
+    <p>"Customer support was incredibly helpful throughout. I felt taken care of at every step of the journey."</p>
+    <h4>— Simran, Punjab</h4>
+  </div>
+</div>
+
+<!-- Add Review Button -->
+<div class="add-review-wrap">
+  <button id="addReviewBtn" class="btn btn-gold">✍️ Share Your Experience</button>
+</div>
+
+<!-- Review Modal -->
+<div id="reviewModal" class="review-modal-overlay">
+  <div class="review-modal">
+    <button id="reviewModalClose" class="review-modal-close">✕</button>
+    <h2>Share Your Experience</h2>
+    <p>We'd love to hear about your journey with WanderWave.</p>
+    <label style="font-size:12px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:0.8px;">Your Rating</label>
+    <div id="starPicker" class="star-picker">
+      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
+    <input id="reviewName" class="form-input" type="text" placeholder="Your Name & Location (e.g. Raj, Delhi)">
+    <textarea id="reviewText" class="form-input" rows="4" placeholder="Write your review…"></textarea>
+    <div id="reviewError" class="form-error">Please fill all fields and select a star rating.</div>
+    <button id="reviewSubmitBtn" class="btn btn-gold btn-full">Submit Review</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">Wander<span>Wave</span></div>
+  <p>© 2025 WanderWave. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<button id="backTop" class="back-top-btn">↑</button>
+
+</body>
+</html>

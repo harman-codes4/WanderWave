@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWave | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="ls" class="loading-screen">
+  <div class="ls-logo">Wander<span>Wave</span></div>
+  <div class="ls-bar-track"><div class="ls-bar"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Wander<span>Wave</span></div>
+  <span id="greeting" class="nav-greeting"></span>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Contact">
+  <div class="page-hero-content">
+    <h1>Get In <span>Touch</span></h1>
+    <p>We're here to help you plan your perfect journey</p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact-container">
+
+  <!-- Info Box -->
+  <div class="contact-info-box">
+    <h2>Contact Info</h2>
+    <div class="info-row">
+      <div class="info-icon">📧</div>
+      <div>
+        <h4>Email</h4>
+        <p>wanderwave@gmail.com</p>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="info-icon">📞</div>
+      <div>
+        <h4>Phone</h4>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="info-icon">📍</div>
+      <div>
+        <h4>Location</h4>
+        <p>India</p>
+      </div>
+    </div>
+    <div class="info-row">
+      <div class="info-icon">🕐</div>
+      <div>
+        <h4>Office Hours</h4>
+        <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+      </div>
+    </div>
+    <div class="social-links">
+      <a class="social-link" href="#">Instagram</a>
+      <a class="social-link" href="#">Facebook</a>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="contact-form-box" id="contactFormBox">
+    <h2>Send a Message</h2>
+    <p>Fill in the form and we'll get back to you within 24 hours.</p>
+    <input id="cName"  class="form-input" type="text"  placeholder="Your Name">
+    <input id="cEmail" class="form-input" type="email" placeholder="Email Address">
+    <textarea id="cMsg" class="form-input" rows="5" placeholder="Your Message"></textarea>
+    <div id="formError" class="form-error">Please fill in all fields with a valid email.</div>
+    <button id="sendMsgBtn" class="btn btn-gold btn-full">Send Message</button>
+  </div>
+
+  <!-- Success -->
+  <div class="success-box" id="successBox">
+    <div class="success-icon">✅</div>
+    <h2>Message Sent!</h2>
+    <p>Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+    <button id="resetFormBtn" class="btn btn-outline" style="margin-top:8px;">Send Another</button>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">Wander<span>Wave</span></div>
+  <p>© 2025 WanderWave. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<button id="backTop" class="back-top-btn">↑</button>
+
+</body>
+</html>

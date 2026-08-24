@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWave | Travel Smarter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="ls" class="loading-screen">
+  <div class="ls-logo">Wander<span>Wave</span></div>
+  <div class="ls-bar-track"><div class="ls-bar"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Wander<span>Wave</span></div>
+  <span id="greeting" class="nav-greeting"></span>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Slider -->
+<div class="slider">
+  <div class="slides">
+    <div class="slide s1">
+      <div class="slide-content">
+        <h2>Explore Paris</h2>
+        <p>Romance, culture, and the world's most iconic skyline await you.</p>
+        <a href="packages.html" class="slide-btn">View Packages</a>
+      </div>
+    </div>
+    <div class="slide s2">
+      <div class="slide-content">
+        <h2>Discover Bali</h2>
+        <p>Temples, terraces, and turquoise waters — spiritual bliss awaits.</p>
+        <a href="packages.html" class="slide-btn">View Packages</a>
+      </div>
+    </div>
+    <div class="slide s3">
+      <div class="slide-content">
+        <h2>Luxury Maldives</h2>
+        <p>Overwater bungalows, crystal lagoons, and endless sunsets.</p>
+        <a href="packages.html" class="slide-btn">View Packages</a>
+      </div>
+    </div>
+    <div class="slide s4">
+      <div class="slide-content">
+        <h2>Visit Dubai</h2>
+        <p>Desert adventures, futuristic skylines, and world-class luxury.</p>
+        <a href="packages.html" class="slide-btn">View Packages</a>
+      </div>
+    </div>
+    <div class="slide s5">
+      <div class="slide-content">
+        <h2>Experience Tokyo</h2>
+        <p>Where ancient tradition meets the pulse of the future.</p>
+        <a href="packages.html" class="slide-btn">View Packages</a>
+      </div>
+    </div>
+    <div class="slide s6">
+      <div class="slide-content">
+        <h2>Swiss Alps</h2>
+        <p>Snow-capped peaks, serene lakes, and fairytale villages.</p>
+        <a href="packages.html" class="slide-btn">View Packages</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Why Choose Us -->
+<div class="section">
+  <div class="section-header">
+    <h2>Why Choose <span>WanderWave</span>?</h2>
+    <p>Everything you need for a seamless journey, in one place.</p>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid">
+    <div class="feature-card">
+      <div class="feature-icon">✈️</div>
+      <h3>Best Prices</h3>
+      <p>Competitive packages with no hidden fees. The price you see is the price you pay.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏨</div>
+      <h3>Premium Hotels</h3>
+      <p>Handpicked properties that guarantee comfort, style and memorable stays.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🌍</div>
+      <h3>50+ Destinations</h3>
+      <p>From hidden gems to iconic landmarks — we cover the globe for you.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🛡️</div>
+      <h3>24/7 Support</h3>
+      <p>Our team is always on standby — your safety and satisfaction are our priority.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Popular Destinations -->
+<div class="section alt">
+  <div class="section-header">
+    <h2>Popular <span>Destinations</span></h2>
+    <p>Explore our most loved travel spots around the world.</p>
+    <div class="section-line"></div>
+  </div>
+  <div class="grid">
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+      <div class="dest-overlay">
+        <div class="dest-tag">Europe</div>
+        <h3>Paris</h3>
+        <p>France — City of Lights</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
+      <div class="dest-overlay">
+        <div class="dest-tag">Asia</div>
+        <h3>Bali</h3>
+        <p>Indonesia — Island of Gods</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Dubai">
+      <div class="dest-overlay">
+        <div class="dest-tag">Middle East</div>
+        <h3>Dubai</h3>
+        <p>UAE — City of the Future</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9" alt="New York">
+      <div class="dest-overlay">
+        <div class="dest-tag">America</div>
+        <h3>New York</h3>
+        <p>USA — The City That Never Sleeps</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2" alt="Goa">
+      <div class="dest-overlay">
+        <div class="dest-tag">India</div>
+        <h3>Goa</h3>
+        <p>India — Sun, Sand & Sunsets</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Singapore">
+      <div class="dest-overlay">
+        <div class="dest-tag">Asia</div>
+        <h3>Singapore</h3>
+        <p>Asia — The Garden City</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf" alt="Tokyo">
+      <div class="dest-overlay">
+        <div class="dest-tag">Asia</div>
+        <h3>Tokyo</h3>
+        <p>Japan — Tradition Meets Tomorrow</p>
+      </div>
+    </div>
+    <div class="dest-card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Maldives">
+      <div class="dest-overlay">
+        <div class="dest-tag">Asia</div>
+        <h3>Maldives</h3>
+        <p>Indian Ocean — Tropical Paradise</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats-section">
+  <div class="section-header">
+    <h2>WanderWave <span>in Numbers</span></h2>
+    <p>Trusted by thousands of happy travellers across the globe.</p>
+    <div class="section-line"></div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">⭐</div>
+      <div class="stat-number" data-target="4.9" data-suffix="">0</div>
+      <div class="stat-label">Average Rating</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">📅</div>
+      <div class="stat-number" data-target="8" data-suffix="+">0</div>
+      <div class="stat-label">Years of Experience</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🧳</div>
+      <div class="stat-number" data-target="25000" data-suffix="+">0</div>
+      <div class="stat-label">Happy Travellers</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">🌍</div>
+      <div class="stat-number" data-target="50" data-suffix="+">0</div>
+      <div class="stat-label">Destinations</div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq-section">
+  <div class="section-header">
+    <h2>Frequently Asked <span>Questions</span></h2>
+    <p>Got questions? We've got answers.</p>
+    <div class="section-line"></div>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question"><span>How do I book a travel package?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>Go to our <a href="packages.html">Packages</a> page, choose your destination, click "Book Now" and follow the steps. You'll get a confirmation with a Booking ID instantly.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>Are there any hidden charges?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>None at all. The price you see includes all taxes and service fees — no surprises at checkout, ever.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>Can I customize my travel package?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>Absolutely! Contact us via the <a href="contact.html">Contact</a> page and our experts will build a personalized itinerary just for you.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>What is the cancellation policy?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>Cancel up to 7 days before travel for a full refund. Cancellations within 7 days may have a partial charge. Contact support for details.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>Do you provide visa assistance?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>Yes — complete visa guidance for all international destinations including documentation, forms and submission support.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>Is travel insurance included?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>Insurance is available as an optional add-on during checkout. Highly recommended for international trips.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span>How do I reach WanderWave support?</span><span class="faq-icon">＋</span></button>
+      <div class="faq-answer"><p>Email <strong>wanderwave@gmail.com</strong>, call <strong>+91 98765 43210</strong>, or use the <a href="contact.html">Contact</a> form. Available Mon–Sat, 9 AM – 7 PM.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">Wander<span>Wave</span></div>
+  <p>© 2025 WanderWave. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+<button id="backTop" class="back-top-btn">↑</button>
+</body>
+</html>

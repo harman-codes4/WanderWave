@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WanderWave | Packages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="ls" class="loading-screen">
+  <div class="ls-logo">Wander<span>Wave</span></div>
+  <div class="ls-bar-track"><div class="ls-bar"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Wander<span>Wave</span></div>
+  <span id="greeting" class="nav-greeting"></span>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero">
+  <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1" alt="Packages">
+  <div class="page-hero-content">
+    <h1>Travel <span>Packages</span></h1>
+    <p>Curated experiences for every kind of explorer</p>
+  </div>
+</div>
+
+<!-- Controls -->
+<div class="pkg-controls">
+  <div class="pkg-filter-box">
+    <label>Budget</label>
+    <input type="range" id="budgetSlider" min="20000" max="300000" value="300000" step="5000">
+    <span id="budgetVal">₹3,00,000</span>
+  </div>
+  <div class="pkg-filter-box" style="flex:0;min-width:auto;">
+    <label>Currency</label>
+    <select id="currencySelect">
+      <option value="INR">₹ INR</option>
+      <option value="USD">$ USD</option>
+      <option value="EUR">€ EUR</option>
+      <option value="AED">د.إ AED</option>
+      <option value="GBP">£ GBP</option>
+      <option value="SGD">S$ SGD</option>
+    </select>
+  </div>
+</div>
+
+<!-- Category Pills -->
+<div class="cat-pills">
+  <button class="cat-pill active" data-cat="all">🌐 All</button>
+  <button class="cat-pill" data-cat="beach">🏖️ Beach</button>
+  <button class="cat-pill" data-cat="adventure">🏔️ Adventure</button>
+  <button class="cat-pill" data-cat="luxury">💎 Luxury</button>
+  <button class="cat-pill" data-cat="budget">💰 Budget</button>
+  <button class="cat-pill" data-cat="family">👨‍👩‍👧 Family</button>
+  <button class="cat-pill" data-cat="honeymoon">💑 Honeymoon</button>
+</div>
+
+<!-- Countdown -->
+<div class="countdown-bar">
+  <div class="countdown-inner">
+    <div class="deal-label">🔥 Limited Deal Ends In</div>
+    <div class="cd-wrap">
+      <div class="cd-box"><div class="cd-num" id="cd-d">00</div><div class="cd-lbl">Days</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-h">00</div><div class="cd-lbl">Hrs</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-m">00</div><div class="cd-lbl">Min</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-s">00</div><div class="cd-lbl">Sec</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Packages Grid -->
+<div class="packages-grid">
+  <div id="noResults" class="no-results">No packages match your filters. Try adjusting your budget or category.</div>
+
+  <div class="package-card" data-price="290000" data-cat="luxury honeymoon beach" data-dest-key="paris" data-dest-name="Paris">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500&auto=format&fit=crop" alt="Paris">
+      <span class="pkg-badge">Bestseller</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Paris — City of Lights</h3>
+      <div class="pkg-meta"><span>⏱ 7 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.9</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="290000">₹2,90,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="150000" data-cat="beach budget family" data-dest-key="bali" data-dest-name="Bali">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop" alt="Bali">
+      <span class="pkg-badge">Popular</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Bali — Island of Gods</h3>
+      <div class="pkg-meta"><span>⏱ 6 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.8</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="150000">₹1,50,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="125000" data-cat="luxury adventure" data-dest-key="dubai" data-dest-name="Dubai">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&auto=format&fit=crop" alt="Dubai">
+      <span class="pkg-badge">Hot Deal</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Dubai — Desert Luxury</h3>
+      <div class="pkg-meta"><span>⏱ 5 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.7</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="125000">₹1,25,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="145000" data-cat="honeymoon beach luxury" data-dest-key="maldives" data-dest-name="Maldives">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&auto=format&fit=crop" alt="Maldives">
+      <span class="pkg-badge">Honeymoon Pick</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Maldives — Overwater Bliss</h3>
+      <div class="pkg-meta"><span>⏱ 5 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 5.0</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="145000">₹1,45,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="195000" data-cat="adventure" data-dest-key="tokyo" data-dest-name="Tokyo">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&auto=format&fit=crop" alt="Tokyo">
+      <span class="pkg-badge">New</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Tokyo — Future Meets Tradition</h3>
+      <div class="pkg-meta"><span>⏱ 8 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.9</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="195000">₹1,95,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="290000" data-cat="adventure luxury" data-dest-key="switzerland" data-dest-name="Switzerland">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&auto=format&fit=crop" alt="Switzerland">
+      <span class="pkg-badge">Premium</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Switzerland — Alpine Dreams</h3>
+      <div class="pkg-meta"><span>⏱ 7 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.8</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="290000">₹2,90,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="75000" data-cat="beach budget family" data-dest-key="goa" data-dest-name="Goa">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&auto=format&fit=crop" alt="Goa">
+      <span class="pkg-badge">Budget Pick</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Goa — Sun, Sand & Vibes</h3>
+      <div class="pkg-meta"><span>⏱ 4 Nights</span><span>🚂 Train Incl.</span><span>⭐ 4.6</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="75000">₹75,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="215000" data-cat="family luxury" data-dest-key="singapore" data-dest-name="Singapore">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=500&auto=format&fit=crop" alt="Singapore">
+      <span class="pkg-badge">Family Favourite</span>
+    </div>
+    <div class="pkg-body">
+      <h3>Singapore — Garden City</h3>
+      <div class="pkg-meta"><span>⏱ 5 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.7</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="215000">₹2,15,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="package-card" data-price="280000" data-cat="luxury honeymoon" data-dest-key="newyork" data-dest-name="New York">
+    <div class="pkg-img-wrap">
+      <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=500&auto=format&fit=crop" alt="New York">
+      <span class="pkg-badge">Exclusive</span>
+    </div>
+    <div class="pkg-body">
+      <h3>New York — The Big Apple</h3>
+      <div class="pkg-meta"><span>⏱ 8 Nights</span><span>✈️ Flights Incl.</span><span>⭐ 4.8</span></div>
+      <div class="pkg-price-row">
+        <div class="pkg-price"><span class="pkg-price-val" data-base="280000">₹2,80,000</span><small>per person</small></div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Destination Detail Modal -->
+<div id="destOverlay" class="dest-modal-overlay">
+  <div class="dest-modal">
+    <button class="modal-close-btn" id="destCloseBtn">✕</button>
+    <div class="dest-modal-img">
+      <img id="dImg" src="" alt="">
+      <div class="dest-modal-img-overlay">
+        <h2 id="dName"></h2>
+        <span id="dRegion"></span>
+      </div>
+    </div>
+    <div class="dest-modal-body">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="overview">Overview</button>
+        <button class="modal-tab" data-tab="info">Info</button>
+        <button class="modal-tab" data-tab="packing">Packing</button>
+      </div>
+      <div id="tab-overview" class="tab-content active">
+        <p id="dDesc" class="dest-desc"></p>
+      </div>
+      <div id="tab-info" class="tab-content">
+        <ul id="dInfo" class="dest-info-list"></ul>
+      </div>
+      <div id="tab-packing" class="tab-content">
+        <div id="dPack" class="pack-grid"></div>
+      </div>
+      <div class="modal-book-row">
+        <div class="modal-price">
+          <span id="dPrice">₹89,000</span>
+          <small>per person · all inclusive</small>
+        </div>
+        <button class="btn btn-gold" id="openBookingBtn">Book This Trip ✈️</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div id="bookingOverlay" class="dest-modal-overlay">
+  <div class="dest-modal">
+    <button class="modal-close-btn" id="bookingCloseBtn">✕</button>
+
+    <div class="dest-modal-body">
+      <h2 style="margin-bottom:10px;">🧾 Complete Your Booking</h2>
+
+      <div class="booking-form">
+
+        <input id="bName" class="form-input" placeholder="Full Name">
+        <input id="bDob" type="date" class="form-input">
+        <input id="bEmail" class="form-input" placeholder="Email">
+        <input id="bPhone" class="form-input" placeholder="Phone Number">
+
+        <select id="bPassengers" class="form-input">
+          <option value="">Number of Passengers</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
+
+        <input id="bDate" type="date" class="form-input">
+
+        <textarea id="bSpecial" class="form-input" placeholder="Special Requests (optional)"></textarea>
+
+        <div id="bookingError" class="form-error">
+          Please fill all fields correctly
+        </div>
+
+        <button id="confirmBookingBtn" class="btn btn-gold btn-full">
+          Confirm Booking →
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentOverlay" class="dest-modal-overlay">
+  <div class="dest-modal">
+    <button class="modal-close-btn" id="paymentCloseBtn">✕</button>
+
+    <div class="dest-modal-body">
+      <h2>💳 Secure Payment</h2>
+
+      <input id="cardName" class="form-input" placeholder="Card Holder Name">
+      <input id="cardNumber" class="form-input" placeholder="Card Number (16 digits)">
+      <input id="cardExpiry" class="form-input" placeholder="MM/YY">
+      <input id="cardCVV" class="form-input" placeholder="CVV">
+
+      <div id="paymentError" class="form-error">
+        Enter valid payment details
+      </div>
+
+      <button id="payBtn" class="btn btn-gold btn-full">
+        Pay Now 💳
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">Wander<span>Wave</span></div>
+  <p>© 2025 WanderWave. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<button id="backTop" class="back-top-btn">↑</button>
+
+</body>
+</html>
